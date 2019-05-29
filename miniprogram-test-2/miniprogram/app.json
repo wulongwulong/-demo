@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/post/post",
+    "pages/welcome/welcome",
+    "pages/video/video",
+    "pages/map/map",
+    "pages/camera/camera"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#a6F6F6",
+    "navigationBarTitleText": "我的微信小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/chatting_unch.png",
+      "selectedIconPath": "images/chat_te.png"
+    },
+    {
+      "pagePath": "pages/welcome/welcome",
+      "text": "资讯",
+      "iconPath": "images/little_bird.png",
+      "selectedIconPath": "images/little_bird_cho.png"
+    },
+    {
+      "pagePath": "pages/map/map",
+      "text": "定位",
+      "iconPath": "images/me_unch.png",
+      "selectedIconPath": "images/me_cho.png"
+    },
+    {
+      "pagePath": "pages/camera/camera",
+      "text": "照相",
+      "iconPath": "images/find_unch.png",
+      "selectedIconPath": "images/find_cho.png"
+    }
+    ]
+  }
+  
+}

@@ -1,0 +1,3 @@
+<view>123334</view>
+
+<button id='btn' bindtap='backDate'>回退传参数</button>

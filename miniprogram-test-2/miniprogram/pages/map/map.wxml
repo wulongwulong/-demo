@@ -1,0 +1,4 @@
+<view>地图展示</view>
+<map latitude='39.917940' longitude='116.397140' class='map'  
+markers='{{mMark}}' bindregionchange='areachange' show-location
+></map>

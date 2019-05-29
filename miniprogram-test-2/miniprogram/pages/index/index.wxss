@@ -1,0 +1,8 @@
+.btn{
+  color: blueviolet;
+}
+.audiostyle{
+  width: 100%;
+  
+}
+
