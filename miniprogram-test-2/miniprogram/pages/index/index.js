@@ -99,10 +99,10 @@ Page({
 */
   onShareAppMessage: function (res) {
     return {
-      title: '哈根达斯冰激凌5折特惠',
+      title: '啦啦啦啦啦啦',
       path: '/pages/index/index?goods_id=' + wx.getStorageSync("goods_id"),
-      // imageUrl: 'http://static.e-mallchina.com/pic/product/brand/detail/hgds.jpg'
-      imageUrl: '/images/img_tab1.png'
+      imageUrl: 'http://static.e-mallchina.com/pic/product/brand/detail/hgds.jpg'
+      // imageUrl: '/images/img_tab1.png'
       //自定义图片路径，可以是本地文件路径、代码包文件路径或者网络图片路径。支持PNG及JPG。显示图长宽比是 5:4。
     }
   },
