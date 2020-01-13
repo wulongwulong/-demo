@@ -22,10 +22,16 @@ author="{{author}}" src="{{src}}" controls loop ></audio>
 <button size='mini' bindtap='audioBackStart'class='btn'>回到开头</button>
 </view>
 
+<view class='compo_css' >
+<button open-type='share'  type='warn' size="mini" plain="true" id='btnShare0' >分享</button>
+</view>
+
 <button id='post' bindtap='go' class='btn' >跳到post页面</button>
 <button id='welcome' bindtap='wel' class='btn' >跳到welcome页面</button>
 <!--video -->
 <button id='myVideo' bindtap='mVideo' class='btn' >跳到video页面</button>
 <button id='myMap' bindtap='mMap' class='btn' >跳到map页面</button>
 <button id='myCamera' bindtap='mCamera' class='btn' >跳到camera页面</button>
+<button id='myLogin' bindtap='myLogin' class='btn' >跳到登录页面</button>
+<button id='mySplash' bindtap='mySplash' class='btn' >跳到Splash页面</button>
 </view>

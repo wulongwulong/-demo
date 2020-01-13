@@ -12,13 +12,15 @@
     "pages/welcome/welcome",
     "pages/video/video",
     "pages/map/map",
-    "pages/camera/camera"
+    "pages/camera/camera",
+    "pages/login/login",
+    "pages/splash/splash"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#a6F6F6",
-    "navigationBarTitleText": "我的微信小程序",
+    "navigationBarBackgroundColor": "#FFB6C1",
+    "navigationBarTitleText": "陪你到天涯海角",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",

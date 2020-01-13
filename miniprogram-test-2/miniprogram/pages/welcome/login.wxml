@@ -1,0 +1,21 @@
+<view class='main'>
+  <view class='header'>
+    <text class='title'>刷子</text>
+  </view>
+  <view class='body'>
+    <form bindsubmit='submit'>
+      <view class='username'>
+        <text>用户名：</text>
+        <input placeholder='账号/手机号/微信/QQ' name="username" value='1433223'></input>
+      </view>
+      <view class='password'>
+        <text>密  码：</text>
+        <input password='true' name="pwd" value='123456'></input>
+      </view>
+      <view>
+        <button form-type='submit'>登录</button>
+        <button>注册</button>
+      </view>
+    </form>
+  </view>
+</view>

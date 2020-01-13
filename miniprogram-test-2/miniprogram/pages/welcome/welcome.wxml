@@ -1,4 +1,2 @@
-<image class= 'img' src='/images/splash.png' ></image>
-
-<button bindtap='startBtn'>倒计时</button>
-<view >{{countTTime}}</view>
+<!--pages/welcome/welcome.wxml-->
+<text>pages/welcome/welcome.wxml</text>

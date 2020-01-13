@@ -4,17 +4,21 @@ Page({
    * 页面的初始数据
    */
   data: {
+    latitude: "31.217497",
+    longitude: "121.36527",
+    //公司地址：  121.509395, 31.236439
+    //我的地址： 121.617507,31.250091
     mMark :[{
       id: '001',
-      latitude:'39.917940',
-      longitude:'116.397140',
+      latitude:'31.217497',
+      longitude:'121.36527',
       // width: '30',
       // height: '30',
       // iconPath: "/images/mark.png",
-      lable: { content : '故宫博物院'},
+      lable: { content : '陆家嘴'},
       
       callout: {
-        content: '我是这个气泡',
+        content: '你在这里',
         fontSize: 14,
         color: '#ffffff',
         bgColor: '#000000',
@@ -36,8 +40,59 @@ Page({
     //   mask: true
     // })
 
-  }
-  ,
+  },
+  /**
+   * 按钮定位点击事件
+   */
+  location: function (e){
+    switch(e.target.id){
+      case "btnHome" :
+        //弹框
+        wx.showModal({
+          title: '当前位置',
+          content: "纬度:" + this.data.mMark[0].longitude + ",经度:" + this.data.mMark[0].latitude,
+          
+        })
+        this.setData({ latitude: this.data.mMark[0].latitude, longitude: this.data.mMark[0].longitude })
+        break;
+
+      case "btnCompany" :
+        wx.showToast({
+          title: '成功',
+          icon: 'succes',
+          duration: 5000,
+          mask: true
+        })
+      
+      break;
+      case "btncurr":
+
+        wx.getLocation({
+          type: 'gcj02',
+          success: (res) => {
+            var latitude = res.latitude
+            var longitude = res.longitude
+            var speed = res.speed
+            var accuracy = res.accuracy
+            this.setData({ latitude: latitude, longitude: longitude })
+            // wx.showModal({
+            //   title: '当前位置',
+            //   content: '经度' + res.longitude + '纬度' + res.latitude,
+            // })
+          }
+        })
+      break;
+
+
+
+      
+
+
+    }
+
+
+
+  },
 
   /**
    * 生命周期函数--监听页面加载
